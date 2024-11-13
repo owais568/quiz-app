@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="nxtQues()">
+    <div>
+        <h1>Quiz App</h1>
+        <h1 id="timer" style="text-align: center;">8:00</h1>
+    </div>
+    <div>
+        <p id="ques"></p><br><br>
+        <input type="radio" name="quiz" class="options" onclick="clicked()">
+        <label for="" id="option1"></label>
+        <br><br>
+        <input type="radio" name="quiz" class="options" onclick="clicked()">
+        <label for="" id="option2"></label>
+        <br><br>
+        <input type="radio" name="quiz" class="options" onclick="clicked()">
+        <label for="" id="option3"></label>
+      <br><br>
+        <button onclick="nxtQues()" id="btn">Next</button>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
